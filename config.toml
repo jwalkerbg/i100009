@@ -1,0 +1,12 @@
+# config.toml
+
+# Sample of parameters in the program
+[parameters]
+#param1 = 11
+param2 = 22
+
+[metadata]
+#version = true
+
+[logging]
+verbose = true
