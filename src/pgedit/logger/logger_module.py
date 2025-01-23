@@ -4,7 +4,7 @@
 import logging
 from datetime import datetime
 
-TAGNAME = "pymodule"
+TAGNAME = "pgedit"
 
 # Custom Formatter
 class CustomFormatter(logging.Formatter):

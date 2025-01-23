@@ -1,4 +1,4 @@
-# pymodule/__init__.py
+# pgedit/__init__.py
 
 from .core import *
 from .drivers import *

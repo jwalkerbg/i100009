@@ -1,4 +1,4 @@
-// src/pymodule/pymodule.h
+// src/pgedit/pymodule.h
 // C header file for pymodule extensions
 
 

@@ -1,4 +1,4 @@
-# src/pymodule/cyth/worker.pyx
+# src/pgedit/cyth/worker.pyx
 
 import time
 

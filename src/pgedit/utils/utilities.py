@@ -1,6 +1,6 @@
 # utils/utilities.py
 
-from pymodule.logger import get_app_logger
+from pgedit.logger import get_app_logger
 
 logger = get_app_logger(__name__)
 

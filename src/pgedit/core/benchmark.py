@@ -1,9 +1,9 @@
 # core/benchmark.py
 
 import time
-from pymodule.logger import get_app_logger
-from pymodule.extensions.cmodulea.cmodulea import c_benchmark
-from pymodule.extensions.worker import cython_benchmark
+from pgedit.logger import get_app_logger
+from pgedit.extensions.cmodulea.cmodulea import c_benchmark
+from pgedit.extensions.worker import cython_benchmark
 
 logger = get_app_logger(__name__)
 

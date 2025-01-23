@@ -5,7 +5,7 @@ from typing import Dict, Any
 import argparse
 from jsonschema import validate, ValidationError
 
-from pymodule.logger import get_app_logger
+from pgedit.logger import get_app_logger
 
 logger = get_app_logger(__name__)
 
@@ -21,7 +21,7 @@ class Config:
 
     DEFAULT_CONFIG = {
         'template': {
-            'template_name': "pymodule",
+            'template_name': "pgedit",
             'template_version': "3.1.3",
             'template_description': { 'text': """Template with CLI interface, configuration options in a file, logger and unit tests""", 'content-type': "text/plain" }
         },

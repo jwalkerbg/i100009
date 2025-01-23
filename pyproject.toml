@@ -1,22 +1,22 @@
 [tool.poetry]
-name = "pymodule"
+name = "pgedit"
 version = "0.1.0"
 description = "A sample project driven by poetry, using C and Cython extensions"
 license = "MIT"
 authors = ["Ivan Cenov <i_cenov@botevgrad.com>"]
 repository = "https://github.com/jwalkerbg/i100007.git"
 readme = "README.md"
-packages = [{include = "pymodule", from = "src"}]
+packages = [{include = "pgedit", from = "src"}]
 # Additional files that shuld be added to sdist and wheel distributions.
 include = [
     "pyproject.toml",
     "build.py",
     "README.md",
-    "src/pymodule/extensions/*",
-    "src/pymodule/extensions/hello_world/*",
-    "src/pymodule/extensions/worker/*",
-    "src/pymodule/extensions/cmodulea/*",
-    "src/pymodule/extensions/cmoduleb/*"
+    "src/pgedit/extensions/*",
+    "src/pgedit/extensions/hello_world/*",
+    "src/pgedit/extensions/worker/*",
+    "src/pgedit/extensions/cmodulea/*",
+    "src/pgedit/extensions/cmoduleb/*"
 ]  # Compiled extensions
 
 # Runtime dependencies
@@ -45,14 +45,14 @@ pytest-mock = ">=3.0.0"
 
 # CLI entry points
 [tool.poetry.scripts]
-pymodule = "pymodule.cli.app:main"
+pgedit = "pgedit.cli.app:main"
 
 # Definitions, specific for this project.
 [tool.build.config]
 # path where Cython and C extensions live, each extension in a separate directory
-extensions_path = "src/pymodule/extensions"
+extensions_path = "src/pgedit/extensions"
 # directories where C extensions can search for C header files
-include_dirs = ["src/pymodule/include", "src/include"]
+include_dirs = ["src/pgedit/include", "src/include"]
 # This specifies the name of the libraries to link against, without the lib prefix or file extension.
 # Example: If you have a shared library named `libmylib.so` (Linux) or `mylib.dll` (Windows), you would specify libraries=["mylib"].
 libraries = []

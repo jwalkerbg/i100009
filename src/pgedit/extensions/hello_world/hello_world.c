@@ -2160,7 +2160,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 
 /* "hello_world.pyx":3
  * # src/pymodule/cyth/hello_world.pyx
- * 
+ *
  * def hello():             # <<<<<<<<<<<<<<
  *     return "Hello to Python world from Cython world!"
  */
@@ -2187,7 +2187,7 @@ static PyObject *__pyx_pf_11hello_world_hello(CYTHON_UNUSED PyObject *__pyx_self
   __Pyx_RefNannySetupContext("hello", 1);
 
   /* "hello_world.pyx":4
- * 
+ *
  * def hello():
  *     return "Hello to Python world from Cython world!"             # <<<<<<<<<<<<<<
  */
@@ -2198,7 +2198,7 @@ static PyObject *__pyx_pf_11hello_world_hello(CYTHON_UNUSED PyObject *__pyx_self
 
   /* "hello_world.pyx":3
  * # src/pymodule/cyth/hello_world.pyx
- * 
+ *
  * def hello():             # <<<<<<<<<<<<<<
  *     return "Hello to Python world from Cython world!"
  */
@@ -2253,7 +2253,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "hello_world.pyx":3
  * # src/pymodule/cyth/hello_world.pyx
- * 
+ *
  * def hello():             # <<<<<<<<<<<<<<
  *     return "Hello to Python world from Cython world!"
  */
@@ -2623,7 +2623,7 @@ if (!__Pyx_RefNanny) {
 
   /* "hello_world.pyx":3
  * # src/pymodule/cyth/hello_world.pyx
- * 
+ *
  * def hello():             # <<<<<<<<<<<<<<
  *     return "Hello to Python world from Cython world!"
  */
@@ -2634,7 +2634,7 @@ if (!__Pyx_RefNanny) {
 
   /* "hello_world.pyx":1
  * # src/pymodule/cyth/hello_world.pyx             # <<<<<<<<<<<<<<
- * 
+ *
  * def hello():
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
