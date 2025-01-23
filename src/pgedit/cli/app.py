@@ -73,7 +73,6 @@ def run_app(config:Config) -> None:
         pgedit.hello_from_core_module_b()
         pgedit.goodbye_from_core_module_b()
         pgedit.hello_from_utils()
-        pgedit.hello_from_ina236()
 
         # pgedit.core.benchmark.benchmark(500000)
     finally:
