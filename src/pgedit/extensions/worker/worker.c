@@ -8,14 +8,14 @@
             "-UNDEBUG"
         ],
         "include_dirs": [
-            "src\\pymodule\\include",
+            "src\\pgedit\\include",
             "src\\include"
         ],
         "language": "c",
         "name": "worker",
         "sources": [
-            "src\\pymodule\\extensions\\worker\\worker.pyx",
-            "src\\pymodule\\extensions\\worker\\worker.c"
+            "src\\pgedit\\extensions\\worker\\worker.pyx",
+            "src\\pgedit\\extensions\\worker\\worker.c"
         ]
     },
     "module_name": "worker"
@@ -1489,7 +1489,7 @@ static const char *__pyx_filename;
 /* #### Code section: filename_table ### */
 
 static const char *__pyx_f[] = {
-  "src\\\\pymodule\\\\extensions\\\\worker\\\\worker.pyx",
+  "src\\\\pgedit\\\\extensions\\\\worker\\\\worker.pyx",
 };
 /* #### Code section: utility_code_proto_before_types ### */
 /* ForceInitThreads.proto */
@@ -2130,7 +2130,7 @@ static const char __pyx_k_cython_fibonacci[] = "cython_fibonacci";
 static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_Cython_function_executed_in[] = "Cython function executed in ";
-static const char __pyx_k_src_pymodule_extensions_worker_w[] = "src\\pymodule\\extensions\\worker\\worker.pyx";
+static const char __pyx_k_src_pgedit_extensions_worker_wor[] = "src\\pgedit\\extensions\\worker\\worker.pyx";
 /* #### Code section: decls ### */
 static PyObject *__pyx_pf_6worker_worker_func(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
 static PyObject *__pyx_pf_6worker_2cython_benchmark(CYTHON_UNUSED PyObject *__pyx_self, int __pyx_v_n); /* proto */
@@ -2191,7 +2191,7 @@ typedef struct {
   PyObject *__pyx_n_s_range;
   PyObject *__pyx_n_s_result;
   PyObject *__pyx_n_s_spec;
-  PyObject *__pyx_kp_s_src_pymodule_extensions_worker_w;
+  PyObject *__pyx_kp_s_src_pgedit_extensions_worker_wor;
   PyObject *__pyx_n_s_start_time;
   PyObject *__pyx_n_s_temp;
   PyObject *__pyx_n_s_test;
@@ -2277,7 +2277,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_range);
   Py_CLEAR(clear_module_state->__pyx_n_s_result);
   Py_CLEAR(clear_module_state->__pyx_n_s_spec);
-  Py_CLEAR(clear_module_state->__pyx_kp_s_src_pymodule_extensions_worker_w);
+  Py_CLEAR(clear_module_state->__pyx_kp_s_src_pgedit_extensions_worker_wor);
   Py_CLEAR(clear_module_state->__pyx_n_s_start_time);
   Py_CLEAR(clear_module_state->__pyx_n_s_temp);
   Py_CLEAR(clear_module_state->__pyx_n_s_test);
@@ -2341,7 +2341,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_range);
   Py_VISIT(traverse_module_state->__pyx_n_s_result);
   Py_VISIT(traverse_module_state->__pyx_n_s_spec);
-  Py_VISIT(traverse_module_state->__pyx_kp_s_src_pymodule_extensions_worker_w);
+  Py_VISIT(traverse_module_state->__pyx_kp_s_src_pgedit_extensions_worker_wor);
   Py_VISIT(traverse_module_state->__pyx_n_s_start_time);
   Py_VISIT(traverse_module_state->__pyx_n_s_temp);
   Py_VISIT(traverse_module_state->__pyx_n_s_test);
@@ -2415,7 +2415,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_range __pyx_mstate_global->__pyx_n_s_range
 #define __pyx_n_s_result __pyx_mstate_global->__pyx_n_s_result
 #define __pyx_n_s_spec __pyx_mstate_global->__pyx_n_s_spec
-#define __pyx_kp_s_src_pymodule_extensions_worker_w __pyx_mstate_global->__pyx_kp_s_src_pymodule_extensions_worker_w
+#define __pyx_kp_s_src_pgedit_extensions_worker_wor __pyx_mstate_global->__pyx_kp_s_src_pgedit_extensions_worker_wor
 #define __pyx_n_s_start_time __pyx_mstate_global->__pyx_n_s_start_time
 #define __pyx_n_s_temp __pyx_mstate_global->__pyx_n_s_temp
 #define __pyx_n_s_test __pyx_mstate_global->__pyx_n_s_test
@@ -3125,7 +3125,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_range, __pyx_k_range, sizeof(__pyx_k_range), 0, 0, 1, 1},
     {&__pyx_n_s_result, __pyx_k_result, sizeof(__pyx_k_result), 0, 0, 1, 1},
     {&__pyx_n_s_spec, __pyx_k_spec, sizeof(__pyx_k_spec), 0, 0, 1, 1},
-    {&__pyx_kp_s_src_pymodule_extensions_worker_w, __pyx_k_src_pymodule_extensions_worker_w, sizeof(__pyx_k_src_pymodule_extensions_worker_w), 0, 0, 1, 0},
+    {&__pyx_kp_s_src_pgedit_extensions_worker_wor, __pyx_k_src_pgedit_extensions_worker_wor, sizeof(__pyx_k_src_pgedit_extensions_worker_wor), 0, 0, 1, 0},
     {&__pyx_n_s_start_time, __pyx_k_start_time, sizeof(__pyx_k_start_time), 0, 0, 1, 1},
     {&__pyx_n_s_temp, __pyx_k_temp, sizeof(__pyx_k_temp), 0, 0, 1, 1},
     {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
@@ -3182,7 +3182,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__4 = PyTuple_Pack(1, __pyx_n_s_i_2); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
-  __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__4, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_pymodule_extensions_worker_w, __pyx_n_s_worker_func, 5, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(0, 5, __pyx_L1_error)
+  __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__4, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_pgedit_extensions_worker_wor, __pyx_n_s_worker_func, 5, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(0, 5, __pyx_L1_error)
 
   /* "worker.pyx":11
  *     print("Worker finished")
@@ -3194,7 +3194,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__6 = PyTuple_Pack(6, __pyx_n_s_n, __pyx_n_s_i_2, __pyx_n_s_start_time, __pyx_n_s_result, __pyx_n_s_end_time, __pyx_n_s_diff); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
-  __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__6, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_pymodule_extensions_worker_w, __pyx_n_s_cython_benchmark, 11, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__6, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_pgedit_extensions_worker_wor, __pyx_n_s_cython_benchmark, 11, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) __PYX_ERR(0, 11, __pyx_L1_error)
 
   /* "worker.pyx":25
  *     return diff
@@ -3206,7 +3206,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__8 = PyTuple_Pack(5, __pyx_n_s_n, __pyx_n_s_a, __pyx_n_s_b, __pyx_n_s_temp, __pyx_n_s_i_2); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
-  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_pymodule_extensions_worker_w, __pyx_n_s_cython_fibonacci, 25, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 25, __pyx_L1_error)
+  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_pgedit_extensions_worker_wor, __pyx_n_s_cython_fibonacci, 25, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -3573,7 +3573,7 @@ if (!__Pyx_RefNanny) {
   #endif
 
   /* "worker.pyx":3
- * # src/pymodule/cyth/worker.pyx
+ * # src/pgedit/cyth/worker.pyx
  * 
  * import time             # <<<<<<<<<<<<<<
  * 
@@ -3621,7 +3621,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "worker.pyx":1
- * # src/pymodule/cyth/worker.pyx             # <<<<<<<<<<<<<<
+ * # src/pgedit/cyth/worker.pyx             # <<<<<<<<<<<<<<
  * 
  * import time
  */
