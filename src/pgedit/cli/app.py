@@ -5,10 +5,6 @@ from importlib.metadata import version
 import pgedit
 from pgedit.core.config import Config
 from pgedit.logger import get_app_logger
-from pgedit.extensions.cmodulea.cmodulea import print_hello_cmodulea
-from pgedit.extensions.cmoduleb.cmoduleb import print_hello_cmoduleb
-from pgedit.extensions.hello_world import hello
-from pgedit.extensions.worker import worker_func
 
 logger = get_app_logger(__name__)
 
@@ -77,13 +73,8 @@ def run_app(config:Config) -> None:
         pgedit.hello_from_core_module_b()
         pgedit.goodbye_from_core_module_b()
         pgedit.hello_from_utils()
-        pgedit.hello_from_ina236()
-        print_hello_cmodulea()
-        print_hello_cmoduleb()
-        print(f"{hello()}")
-        worker_func()
 
-        pgedit.core.benchmark.benchmark(500000)
+        # pgedit.core.benchmark.benchmark(500000)
     finally:
         logger.info("Exiting run_app")
 
