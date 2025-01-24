@@ -46,7 +46,8 @@ pytest-mock = ">=3.0.0"
 
 # CLI entry points
 [tool.poetry.scripts]
-pgedit = "pgedit.cli.app:main"
+pgedit = "pgedit.cli.app:main_cli"
+pgeditor = "pgedit.cli.app:main_gui"
 
 # Definitions, specific for this project.
 [tool.build.config]

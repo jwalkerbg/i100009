@@ -5,6 +5,7 @@ from importlib.metadata import version
 import pgedit
 from pgedit.core.config import Config
 from pgedit.logger import get_app_logger
+from ..gui import run_gui_app
 
 logger = get_app_logger(__name__)
 
@@ -35,9 +36,40 @@ def parse_args():
 
     return parser.parse_args()
 
-def main():
+
+def main_gui():
+    """Main entry point of the GUI."""
+
+    try:
+        cfg = handle_configuration()
+    except Exception as e:
+        logger.info('Bad configuration. Giving up')
+        return
+
+    if cfg.config['metadata']['version']:
+        app_version = version("pgedit")
+        print(f"pgeditor {app_version}")
+    else:
+        run_gui_app(cfg)
+
+
+def main_cli():
     """Main entry point of the CLI."""
 
+    try:
+        cfg = handle_configuration()
+    except Exception as e:
+        logger.info('Bad configuration. Giving up')
+        return
+
+    # Step 5: Show version info or run the application with collected configuration
+    if cfg.config['metadata']['version']:
+        app_version = version("pgedit")
+        print(f"pgedit {app_version}")
+    else:
+        run_cli_app(cfg)
+
+def handle_configuration() -> Config:
     # Step 1: Create config object with default configuration
     cfg = Config()
 
@@ -50,30 +82,25 @@ def main():
         cfg.load_config_file(config_file)
     except Exception as e:
         logger.info("Error with loading configuration file. Giving up.\n%s",str(e))
-        return
+        raise Exception from e
 
     # Step 4: Merge default config, config.json, and command-line arguments
     cfg.merge_options(args)
+    return cfg
 
-    # Step 5: Show version info or run the application with collected configuration
-    if cfg.config['metadata']['version']:
-        app_version = version("pgedit")
-        print(f"pgedit {app_version}")
-    else:
-        run_app(cfg)
 
 # CLI application main function with collected options & configuration
-def run_app(config:Config) -> None:
+def run_cli_app(config:Config) -> None:
     try:
         # Add real application code here.
-        logger.info("Running run_app")
+        logger.info("Running run_cli_app")
         logger.info("config = %s",str(config.config))
         pgedit.hello_from_utils()
 
         # pgedit.core.benchmark.benchmark(500000)
     finally:
-        logger.info("Exiting run_app")
+        logger.info("Exiting run_cli_app")
 
 
 if __name__ == "__main__":
-    main()
+    main_cli()
