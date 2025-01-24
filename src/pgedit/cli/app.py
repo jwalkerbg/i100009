@@ -68,10 +68,6 @@ def run_app(config:Config) -> None:
         # Add real application code here.
         logger.info("Running run_app")
         logger.info("config = %s",str(config.config))
-        pgedit.hello_from_core_module_a()
-        pgedit.goodbye_from_core_module_a()
-        pgedit.hello_from_core_module_b()
-        pgedit.goodbye_from_core_module_b()
         pgedit.hello_from_utils()
 
         # pgedit.core.benchmark.benchmark(500000)
